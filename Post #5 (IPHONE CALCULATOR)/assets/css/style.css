@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body, html {
+    background-color: #121418;
+    font-family: 'IBM Plex Sans', sans-serif;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: auto;
+    height: 450px;
+    background-color: #000000;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px 20px;
+}
+
+.content-result {
+    width: 100%;
+    color: white;
+    padding: 2px;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden; /* Adiciona barras de rolagem se o conteúdo exceder os limites */
+}
+
+.content-result p {
+    font-size: 2rem;
+    overflow: hidden;; /* Garante a quebra de palavras muito longas */
+}
+
+.btn-calc, .btn-calc-number, .btn-calc-symbol {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: 0.3s ease;
+}
+
+.btn-calc {
+    
+    background-color: #A5A5A5;
+}
+
+.btn-calc-number {
+    background-color: #343434;
+    color: white;
+}
+
+.btn-calc-symbol {
+    background-color: #FE9402;
+    color: white;
+}
+
+.btn-big {
+    width: 108px;
+    height: 40px;
+    margin: 2px;
+    border-radius: 15px;
+    border: none;
+    background-color: #343434;
+    color: white;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
